@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATM System.</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="all.css">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+        <div class="logo">
+<i class="fa fa-university fa-5x" id="img" style="color:#ac9766; text-shadow:3px 3px 3px #fff;"></i>
+        </div>
+        <div class="brand">
+          <h1>People's Bank</h1>
+          <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp kyuki apna time aayega !</p>
+
+        </div>
+      </header>
+
+     <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer style="height:85px">
+      <div id="foot">
+      <center>
+      <br>
+        <p>&copy; 2019 people's bank</p>
+        <p>all right Reserved</p>
+      </center>
+      </div>
+    </footer>
+        </form>
+</body>
+</html>
